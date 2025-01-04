@@ -98,7 +98,7 @@ if (isset($_GET['list'])) {
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:description" content="<?php echo $BRANDS ?> adalah situs pengeluaran angka togel resmi dan terakurat yang menjadi rekomendasi terpercaya untuk para penggemar togel di tahun 2025. Dengan sistem yang transparan dan akurat, NUSTOTO menyediakan informasi terkini mengenai hasil pengeluaran angka togel, memastikan pengguna mendapatkan data yang valid dan dapat diandalkan. Bergabunglah dengan NUSTOTO untuk pengalaman bermain togel yang lebih aman dan menyenangkan." />
 <meta name="description" content="<?php echo $BRANDS ?> adalah situs pengeluaran angka togel resmi dan terakurat yang menjadi rekomendasi terpercaya untuk para penggemar togel di tahun 2025. Dengan sistem yang transparan dan akurat, NUSTOTO menyediakan informasi terkini mengenai hasil pengeluaran angka togel, memastikan pengguna mendapatkan data yang valid dan dapat diandalkan. Bergabunglah dengan NUSTOTO untuk pengalaman bermain togel yang lebih aman dan menyenangkan." />
-<meta name="google-site-verification" content="cnCUfwvgpGw4ZXrrjwQz8BbI_4ggvuJyrQGfUUopxPI" />
+<meta name="google-site-verification" content="LbcV9RShMcO2TxO8IvqLuN70XDs6wokeoWYcRMbe37o" />
 <link rel="preconnect" href="https://images.squarespace-cdn.com">
 <script type="text/javascript" src="//use.typekit.net/ik/tA3XhR398KON-5PTNdAHOh3pmlIfKQeFO8dhNs7dOevfeGJgfFHN4UJLFRbh52jhWDjhwDBR5ejoZcJoFeIUF2jU5QboFQwUwsGMJyZy-asTiKu1ScNXZWFnOAmtiem0ZemqH6GJ1iJgIMMjgfMfH6GJ1NJgIMMjgPMfH6GJGiJgIMMjgkMfH6GJ1lJgIMMj2KMfH6GJGlJgIMMjIPMfqMYEqSpUg6.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
